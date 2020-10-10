@@ -15,14 +15,14 @@ Zipf's law applies to all languages known to men when viewed from a macroscopic 
 _technical description_
 
 1. The user chooses a file. A _FileInputStream_ reads the file and convert its content to a String. (This gives the file a length limit of 2^31 - 1 characters)
-1. A method divides the String into individual words and store them in an ArrayList. The method identifies words as chunks of characters delimited by non-letter characters.
+1. A method divides the String into individual words and store them in an ArrayList. The method identifies words as chunks of letters delimited by non-letter characters.
 1. A method analyzes the frequencies of the words and store the word-frequency pairs in a TreeMap. The TreeMap also identifies the words spelled with lower and upper cases of the same letters ("professor" vs "Professor") and singular and plural forms (doesn't work very well right now) and treat them as the same word.
 
 
 --------------------------------------------------------
 ### Project Progress
 
-Currently (Oct-10-2020) the program analyzing the text file is complete (with a few changes I intend to implement). The file is chosen by editing a String in the main() method, and the output is displayed in the console.
+Currently (Oct-10-2020) the program analyzing the text file is complete (with a few changes I intend to implement). As the GUI is yet to be implemented, currently the file is chosen by editing a String in the main() method, and the output is displayed in the console.
 
 The next step is to implement a GUI. I will be using JavaFX for this.
 
