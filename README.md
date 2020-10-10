@@ -16,7 +16,7 @@ _technical description_
 
 1. The user chooses a file. A _FileInputStream_ reads the file and convert its content to a String. (This gives the file a length limit of 2^31 - 1 characters)
 1. A method divides the String into individual words and store them in an ArrayList. The method identifies words as chunks of letters delimited by non-letter characters.
-1. A method analyzes the frequencies of the words and store the word-frequency pairs in a TreeMap. The TreeMap also identifies the words spelled with lower and upper cases of the same letters ("professor" vs "Professor") and singular and plural forms (doesn't work very well right now) and treat them as the same word.
+1. A method analyzes the frequencies of the words and store the word-frequency pairs in a TreeMap. The method also identifies the same words spelled with lower and upper cases letters ("professor" vs "Professor") and singular and plural forms (doesn't work very well right now).
 
 
 --------------------------------------------------------
